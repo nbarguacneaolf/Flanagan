@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Bruce Flanagan</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Contact Me</h1>
+            <p>Fill out this form to send me a message:</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 400px; margin: 0 auto; text-align: left;">
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" required style="width: 100%; margin-bottom: 10px;"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" required style="width: 100%; margin-bottom: 10px;"><br>
+
+                <label for="message">Message:</label><br>
+                <textarea name="message" rows="5" required style="width: 100%; margin-bottom: 10px;"></textarea><br>
+
+                <button type="submit" style="background-color: var(--primary-color); color: var(--text-color); padding: 10px 20px; border: none; cursor: pointer;">Send</button>
+            </form>
+            <p style="margin-top: 20px; font-size: 0.9em;">You’ll need to set up your Formspree link to receive messages.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bruce Flanagan</p>
+    </footer>
+</body>
+</html>
